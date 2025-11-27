@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <style>
+        body {
+            background: #f0f4f8;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 40px;
+        }
+
+        .container {
+            width: 350px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        form input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            outline: none;
+            font-size: 15px;
+        }
+
+        form input:focus {
+            border-color: #007bff;
+        }
+
+        .button {
+            width: 100%;
+            padding: 12px;
+            background: #007bff;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 6px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h2>Registration Form</h2>
+
+        <form onsubmit="alert('Registration Successful!'); return false;">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="password" placeholder="Your Password" required>
+            <input type="number" placeholder="Your Mobile Number" required>
+            <input type="text" placeholder="Your Address" required>
+
+            <button class="button" type="submit">Submit</button>
+        </form>
+
+    </div>
+
+</body>
+</html>
